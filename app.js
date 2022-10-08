@@ -12,7 +12,12 @@ app.post('/team/pokemons', () => {
 
 });
 
-app.put('/team', () => {
+app.get('/team', (req, res) => {
+    res.status(200).send('Hello World!');
+
+});
+
+app.put('/team', (req, res) => {
     res.status(200).send('Hello World!');
 
 });
@@ -23,7 +28,7 @@ app.delete('/teams/pokemons/:pokeid', () => {
 });
 
 
-app.put('/teams', () => {
+app.put('/team', () => {
     res.status(200).send('Hello World!');
 
 });
