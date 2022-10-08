@@ -33,3 +33,6 @@ app.put('/teams', () => {
 app.listen(port, () => {
     console.log('Server started at point 3000');
 });
+
+
+exports.app = app;
